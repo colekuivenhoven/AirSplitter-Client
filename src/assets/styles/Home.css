@@ -1,0 +1,204 @@
+.container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(255,0,0,0.0);
+    color: rgba(255,255,255,0.8);
+    margin-top: 15vmin;
+    max-width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 125vmin;
+    max-width: 100%;
+    height: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.home-info-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: calc(100% - 4vmin);
+    min-height: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1vmin;
+    margin: 2vmin;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 1vmin;
+    animation: slideIn_Right 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    transform: translateX(0vmin);
+}
+
+.home-info-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    aspect-ratio: 1.2;
+    box-sizing: border-box;
+    padding: 1vmin;
+    border-radius: 1vmin;
+    background: url('/src/assets/images/IsoVocal.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.home-info-img-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    aspect-ratio: 1.2;
+    box-sizing: border-box;
+    padding: 1vmin;
+    border-radius: 1vmin;
+    background: url('/src/assets/images/IsoInstrumental.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.home-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 1vmin;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 1vmin;
+}
+
+.home-info-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1vmin;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 1vmin;
+    font-size: 4vmin;
+    font-weight: bold;
+}
+
+.home-info-tag-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1vmin;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 1vmin;
+    font-size: 2vmin;
+    font-weight: normal;
+    
+}
+
+.home-info-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0.5vmin;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 1vmin;
+    font-size: 1.75vmin;
+    font-weight: bold;
+    border: 0.4vmin solid rgba(255,255,255,0.8);
+    margin: 0.5vmin;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.home-info-tag:hover {
+    color: rgba(254, 184, 122, 1);
+    border: 0.4vmin solid rgba(254, 184, 122, 1);
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+}
+
+.home-info-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1vmin;
+    padding-left: 2vmin;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 1vmin;
+    font-size: 2vmin;
+    font-weight: normal;
+}
+
+.home-info-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1vmin;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 1vmin;
+    font-weight: normal;
+}
+
+.home-info-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0.5vmin;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 1vmin;
+    font-size: 2vmin;
+    font-weight: bold;
+    border: 0.0vmin solid rgba(255,255,255,0.8);
+    margin: 0.5vmin;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.home-info-link:hover {
+    color: rgba(254, 184, 122, 1);
+}
