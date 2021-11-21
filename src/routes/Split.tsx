@@ -36,9 +36,9 @@ function Split(props:any) {
     }
   
     async function download_2stem() {
-      let response:any = await fetch('http://130.45.47.105:3040/song/get-isolated/'+vocalPath.name+'/'+vocalPath.type+'.'+vocalPath.ext);
+      let response:any = await fetch('http://130.45.47.105:3040/file/get-zip/'+vocalPath.name);
       response = await response.blob();
-      downloadjs(response, `Vocals_${vocalName}.mp3`);
+      downloadjs(response, `Isolate_${vocalName}.zip`);
       resetAll();
     }
   
@@ -99,7 +99,7 @@ function Split(props:any) {
                             fontSize: isMobile ? '8vmin' : '',
                         }}
                     >
-                        Isolate Vocals
+                        Isolate Audio
                     </div>
                     <div className="split-row">
                         <div className={`split-info-upload-btn ${vocalName ? "" : "active"} upload`}
